@@ -1,0 +1,62 @@
+body > table{
+    width: 100%;
+}
+
+table{
+    background-color: #dddddd;
+}
+table.list{
+    width:40%;
+}
+
+td, th {
+    
+    text-align: left;
+    padding: 8px;
+    
+}
+
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: left;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    margin-right: 4px;
+}
+
+label.validation-error{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+.sticky{
+    height: 532px;
+    width: 600px;
+    float: left;
+    position: sticky;
+    top: 0;
+}
