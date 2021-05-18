@@ -1,6 +1,7 @@
 $(function()
 {
     load();
+    album();
     $("#update").click(addRecipe);
 });
 
@@ -42,7 +43,7 @@ function load()
 
 
 
-function load()
+function album()
 {
               $.ajax({
                   url: "https://jsonplaceholder.typicode.com/albums",
