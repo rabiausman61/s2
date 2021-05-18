@@ -17,6 +17,7 @@ function readFormData() {
     return formData;
 }
 
+
 function insertNewRecord(data) {
     var table = document.getElementById("list").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);
@@ -25,12 +26,8 @@ function insertNewRecord(data) {
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.empCode;
     cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.salary;
-    cell4 = newRow.insertCell(3);
-    cell4.innerHTML = data.city;
-    cell4 = newRow.insertCell(4);
-    cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-                       <a onClick="onDelete(this)">Delete</a>`;
+    cell3.innerHTML = `<button onClick="onEdit(this)">Edit</button>
+                       <button onClick="onDelete(this)">Delete</button>`;
 }
 
 function resetForm() {
