@@ -5,7 +5,8 @@
     <title>
        FA18-BSE-061
     </title>
-   
+    <a href="./album.html">Click here to see albums</a>
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -38,7 +39,8 @@
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
                         <label>Email</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
+                        <input type="text" name="fullName" id="fullName"
+                        pattern=".+@.+.com" >
                     </div>
                     <div>
                         <label>Username</label>
@@ -51,7 +53,7 @@
                 </form>
             </td>
             <td>
-                <table class="posts-table list table table-dark" id="list">
+                <table class="posts-table list table table" id="list">
                     <thead>
                       <tr>
                         <th>Email</th>

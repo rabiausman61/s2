@@ -26,8 +26,8 @@ function insertNewRecord(data) {
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.empCode;
     cell3 = newRow.insertCell(2);
-    cell3.innerHTML = `<button onClick="onEdit(this)">Edit</button>
-                       <button onClick="onDelete(this)">Delete</button>`;
+    cell3.innerHTML = `<button onClick="onEdit(this)">Update</button>
+                       `;
 }
 
 function resetForm() {
